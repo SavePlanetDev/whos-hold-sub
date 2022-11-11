@@ -3,10 +3,13 @@ import style from '../styles/Plan.module.scss'
 import Headerpage from '../componance/header.page'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
+import { useAccount } from 'wagmi';
+import axios from 'axios';
 
 export default function Checkdata() {
           const router = useRouter()
-          const { nftAddress, ownerDiscordId, discordGuildId, ownerWalletAddress, projectName, totalSupply, symbol, website, facebook ,twitter, discordInviteLink, etherscan, planId, roleName  } = router.query
+          const { address } = useAccount();
+          const { nftAddress, ownerDiscordId, discordGuildId, projectName, totalSupply, symbol, website, facebook ,twitter, discordInviteLink, etherscan, planId, roleName  } = router.query
           const planData = [
                     {
                               planId:1,
@@ -21,6 +24,34 @@ export default function Checkdata() {
                               name: "PRO",
                     }
           ]
+          const verifyHolder = async (nftAddress, ownerDiscordId, discordGuildId, address, projectName, totalSupply, symbol, website, facebook ,twitter, discordInviteLink, etherscan, planId, roleName) => {
+                    try {
+                              const response = await axios.post(
+                                        `http://localhost:3000/v1/subscription/subscribe/`,
+                                        {
+                                                nftAddress: nftAddress,
+                                                ownerDiscordId: ownerDiscordId,
+                                                discordGuildId: discordGuildId,
+                                                ownerWalletAddress:address,
+                                                projectName:projectName,
+                                                totalSupply:totalSupply,
+                                                symbol:symbol,
+                                                website:website,
+                                                facebook:facebook,
+                                                twitter:twitter,
+                                                discordInviteLink:discordInviteLink,
+                                                etherscan:etherscan,
+                                                planId:planId,
+                                                roleName:roleName
+                                        }
+                                        
+                                      );
+                                      router.push("/completed")
+                    } catch(e){
+                              const guild = JSON.stringify(discordGuildId)
+                              return alert("GuildId: "+ (guild) +" is already!");
+                    }
+          }
 
           return <div>
                     <div className={styles.container}>
@@ -174,8 +205,9 @@ export default function Checkdata() {
                                                                                                               <p>{planData.find(plan => plan.planId).name}</p>
                                                                                                     </div>
                                                                                           </div>
-
-                                                                                          <Link href="/completed"><button className={style.button1} type="submit" value="Submit" >Submit</button></Link>
+                                                                                          
+                                                                                          <button className={style.button1} onClick={() => verifyHolder(nftAddress,address, ownerDiscordId, discordGuildId, projectName, totalSupply, symbol, website, facebook ,twitter, discordInviteLink, etherscan, planId, roleName)}> Confirm</button>
+                                                                                          
                                                                                           
                                                                                           <Link href="/formpage"> <button  className={style.buttonback} type="submit" value="Submit" >Back</button></Link>
                                                                                          
