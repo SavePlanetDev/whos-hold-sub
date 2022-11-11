@@ -1,0 +1,97 @@
+.p1{
+position: relative;
+top: 166px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+/* or 49px */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+.p11{
+          position: relative;
+top: 140px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 122.5%;
+/* or 49px */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.p2{
+          position: relative;
+top: 110px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.line1 {
+          position: relative;
+width: 352px;
+top: 210px;
+left: 803px;
+
+
+border: 1px solid #FFFFFF;
+}
+
+.line2 {
+          
+position: relative;
+width: 352px;
+top: 210px;
+left: 303px;
+
+border: 1px solid #FFFFFF;
+}
+
+.textcontanner{
+          position: relative;
+          top: -230px;
+          
+          
+}
+
+.backbox{
+position: fixed;
+width: 97%;
+height: 74%;
+top: 54%;
+float: center;
+
+
+background: linear-gradient(180deg, #CE04BA 0%, rgba(101, 7, 92, 0.44) 100%);
+box-shadow: 12px -12px 24px rgba(0, 0, 0, 0.55);
+border-radius: 74px;
+}
+
+.frontbox {
+position: fixed;
+margin-left: auto;
+margin-right: auto;
+width: 35%;
+height: 74%;
+left: 32%;
+top: 38%;
+float: center;
+
+background: linear-gradient(180deg, #CE04BA 0%, #BC2FFF 100%);
+box-shadow: 10px -11px 28px rgba(0, 0, 0, 0.25);
+border-radius: 27px;
+}
