@@ -7,6 +7,7 @@ $light-blue: #D5FFFC;
 $dull-blue: #437299;
 $base-font: Oxygen, Arial, Helvetica, sans-serif;
 $heading-font: Oswald, Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@400;700&display=swap');
 
 
 
@@ -78,10 +79,7 @@ $heading-font: Oswald, Arial, Helvetica, sans-serif;
                                         margin-top: 10px;
                               }
 
-                              .button {
-                                        padding: 20px;
-                                        font-size: 30px;
-                              }
+                              
 
                               .planname {
                                         color: black;
@@ -114,6 +112,31 @@ $heading-font: Oswald, Arial, Helvetica, sans-serif;
                                                   text-decoration: none;
                                         }
                               }
+                    }
+                    .mostpop {
+                              position: absolute;
+                              width: 40%;
+                              height: 64px;
+                              left: 0px;
+                              top: 0px;
+
+                              background: #FFAE26;
+                              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                              border-radius: 6px 30px 30px 0px;
+                    }
+
+                    .mostpoptext {
+
+                              position: relative;
+                              font-family: 'Poppins';
+                              font-style: normal;
+                              font-weight: 600;
+                              font-size: 100%;
+                              line-height: 30px;
+                              text-align: center;
+                              color: #FFFFFF;
+
+
                     }
 
                     @media all and (max-width: 700px) {
@@ -168,7 +191,7 @@ $heading-font: Oswald, Arial, Helvetica, sans-serif;
 
                     .mostpop {
                               position: absolute;
-                              width: 45%;
+                              width: 40%;
                               height: 64px;
                               left: 0px;
                               top: 0px;
@@ -532,7 +555,7 @@ $heading-font: Oswald, Arial, Helvetica, sans-serif;
 
 .plans2 {
           margin: 0 auto;
-          max-width: 80%;
+          max-width: 60%;
           display: flex;
           flex-flow: row wrap;
           position: relative;
@@ -605,12 +628,14 @@ $heading-font: Oswald, Arial, Helvetica, sans-serif;
                               border: none;
                               margin-bottom: 15px;
                               border-radius: 40px;
-                              width: 60%;
+                              width: 85%;
                               left: 4%;
                               height: 55px;
                               background: transparent;
                               border: 3px solid white;
-                              
+                              color: white;
+                              text-align: center;
+                              top:5px;
                               }
                     
                     .inputtext{
@@ -618,8 +643,8 @@ $heading-font: Oswald, Arial, Helvetica, sans-serif;
                               border: none;
                               margin-bottom: 15px;
                               border-radius: 40px;
-                              width: 60%;
-                              left: 4%;
+                              width: 85%;
+                              left: 3%;
                               height: 55px;
                               background: transparent;
                               border: 3px solid white;
@@ -632,13 +657,14 @@ $heading-font: Oswald, Arial, Helvetica, sans-serif;
                               border: none;
                               margin-bottom: 15px;
                               border-radius: 40px;
-                              width: 60%;
-                              left: 4%;
+                              width: 70%;
+                              left: 7%;
                               height: 55px;
                               background: transparent;
                               border: 3px solid white;
                               color: rgb(255, 255, 255);
                               text-align: center;
+                              top:7px;
 
                     }
                     .planposition{
@@ -656,7 +682,7 @@ $heading-font: Oswald, Arial, Helvetica, sans-serif;
                     
                     
                     label {
-                              display: inline;
+                              display: relative;
                               }
                     form {
                               width: 90%;
@@ -667,7 +693,7 @@ $heading-font: Oswald, Arial, Helvetica, sans-serif;
                               position: relative;
                               margin-top: 25px;
                               top:12%;
-                              left: 8%;
+                              left: 5%;
                     }
 
                     &:hover {
@@ -866,8 +892,8 @@ $heading-font: Oswald, Arial, Helvetica, sans-serif;
                               position: relative;
                               background: linear-gradient(230.29deg, #FF9820 36.06%, #FFAE26 72.69%);
                               box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2); 
-                              top: -22px;
-                              left: 32%;
+                              top: 0;
+                              left: 40%;
                               font: 24px $heading-font;
                               font-size: 100%;
                               width: 20%;
@@ -884,8 +910,8 @@ $heading-font: Oswald, Arial, Helvetica, sans-serif;
                               position: relative;
                               background: linear-gradient(230.29deg, #FF9820 36.06%, #FFAE26 72.69%);
                               box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2); 
-                              top: -5px;
-                              left: 20%;
+                              top: 0px;
+                              left: 24%;
                               font: 24px $heading-font;
                               font-size: 100%;
                               width: 20%;
@@ -904,8 +930,8 @@ $heading-font: Oswald, Arial, Helvetica, sans-serif;
                               background: linear-gradient(230.29deg, #FF6320 36.06%, #FF5A26 72.69%);
                               box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
                               border-radius: 30px;
-                              top: -5px;
-                              left: 24%;
+                              top: 0;
+                              left: 27%;
                               height: 50px;
                               font: 24px $heading-font;
                               font-size: 100%;

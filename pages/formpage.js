@@ -145,7 +145,7 @@ export default function Frompage() {
                                                                                                               </div>
                                                                                                     </div>
                                                                                           </div>
-
+                                                                                          
 
 
                                                                                           <div className={style.planposition}>
@@ -160,7 +160,7 @@ export default function Frompage() {
                                                                                                               </select>
                                                                                                     </div>
                                                                                           </div>
-
+                                                                                          
                                                                                           <button className={style.button} type="submit" value="Submit" >Submit</button>
                                                                                 </form>
                                                                       </div>

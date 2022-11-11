@@ -20,7 +20,7 @@ export default function completed() {
                                                                                 <p className={style.p12}>Completed!</p>
                                                                                 <p className={style.p21}>Congratulations! Invite your bot to your discord server by <br/> clicking the button below</p>
                                                                                 <div className={style.vdocontaner}>
-                                                                                <ReactPlayer url='https://www.youtube.com/watch?v=R7x2PDFOvi8' height={300} width={670} />
+                                                                                <ReactPlayer url='https://www.youtube.com/watch?v=R7x2PDFOvi8' height={300} width={750} />
                                                                                 </div>
                                                                                 
                                                                                 

@@ -1,10 +1,13 @@
 import '../styles/globals.css'
 import '@rainbow-me/rainbowkit/styles.css';
 import { useState, useEffect } from 'react';
+import merge from 'lodash.merge';
 
 import {
   getDefaultWallets,
   RainbowKitProvider,
+  Theme,
+  darkTheme
 } from '@rainbow-me/rainbowkit';
 import {
   chain,
@@ -13,6 +16,17 @@ import {
   WagmiConfig,
 } from 'wagmi';
 import { publicProvider } from 'wagmi/providers/public';
+
+
+const myTheme = merge(darkTheme(), {
+          colors: {
+                    accentColor: 'linear-gradient(230.29deg, #FF9820 36.06%, #FFAE26 72.69%)',
+                    connectButtonBackground: 'linear-gradient(230.29deg, #FF9820 36.06%, #FFAE26 72.69%)',
+          },
+          shadows:{
+                    connectButton: '0px 10px 30px rgba(183, 50, 39, 0.2)',
+          },
+        } );
 
 const { chains, provider } = configureChains(
           [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
@@ -50,7 +64,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
           <WagmiConfig client={wagmiClient}>
-            <RainbowKitProvider chains={chains}>
+            <RainbowKitProvider chains={chains} theme={myTheme}>
             <Component {...pageProps} />
             </RainbowKitProvider>
           </WagmiConfig>
