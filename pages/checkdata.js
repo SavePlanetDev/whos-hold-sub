@@ -27,7 +27,7 @@ export default function Checkdata() {
           const verifyHolder = async (nftAddress, ownerDiscordId, discordGuildId, address, projectName, totalSupply, symbol, website, facebook ,twitter, discordInviteLink, etherscan, planId, roleName) => {
                     try {
                               const response = await axios.post(
-                                        `http://localhost:3000/v1/subscription/subscribe/`,
+                                        `http://157.245.152.83:3003/v1/subscription/subscribe/`,
                                         {
                                                 nftAddress: nftAddress,
                                                 ownerDiscordId: ownerDiscordId,
@@ -206,7 +206,7 @@ export default function Checkdata() {
                                                                                                     </div>
                                                                                           </div>
                                                                                           
-                                                                                          <button className={style.button1} onClick={() => verifyHolder(nftAddress,address, ownerDiscordId, discordGuildId, projectName, totalSupply, symbol, website, facebook ,twitter, discordInviteLink, etherscan, planId, roleName)}> Confirm</button>
+                                                                                          <button className={style.button1} onClick={() => verifyHolder(nftAddress, ownerDiscordId, discordGuildId, address, projectName, totalSupply, symbol, website, facebook ,twitter, discordInviteLink, etherscan, planId, roleName)}> Confirm</button>
                                                                                           
                                                                                           
                                                                                           <Link href="/formpage"> <button  className={style.buttonback} type="submit" value="Submit" >Back</button></Link>

@@ -485,14 +485,15 @@ $heading-font: Oswald, Arial, Helvetica, sans-serif;
 .p12{
           position: relative;
           top:-10%;
-          left: -10%;
+          left: -5%;
+          text-align: center;
           font-family: 'Poppins';
           font-style: normal;
           font-weight: 600;
           font-size: 40px;
           /* or 49px */
 
-          text-align: center;
+          
 
           color: #FFFFFF;
 }
@@ -513,7 +514,7 @@ $heading-font: Oswald, Arial, Helvetica, sans-serif;
 .p21 {
           position: relative;
           top:-10%;
-          left: -10%;
+          left: -5%;
 
           font-family: 'Poppins';
           font-style: normal;
@@ -582,7 +583,7 @@ $heading-font: Oswald, Arial, Helvetica, sans-serif;
                     }
                     .mostpop {
                               position: absolute;
-                              width: 25%;
+                              width: 50%;
                               height: 64px;
                               left: 0px;
                               top: 0px;
@@ -701,8 +702,10 @@ $heading-font: Oswald, Arial, Helvetica, sans-serif;
 
                               @media all and (max-width: 700px) {
                                         margin-top: 10px;
-                              }
 
+                                        
+                              }
+                              
                               
 
                               .planname {
@@ -766,6 +769,7 @@ $heading-font: Oswald, Arial, Helvetica, sans-serif;
 
                     @media all and (max-width: 700px) {
                               width: 100%;
+                    
                     }
           }
 
@@ -963,8 +967,11 @@ $heading-font: Oswald, Arial, Helvetica, sans-serif;
                                         background: saturate(#fb8a09 , 70%);
                               }
                     .vdocontaner{
-                              position: relative;
-                              top: 20px;
+                             position: relative;
+                             max-width: 50%;
+                             max-height: 100%;
+                             display: block;
+
                     }
                     }
           }
