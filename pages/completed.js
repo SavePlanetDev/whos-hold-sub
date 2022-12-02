@@ -6,6 +6,7 @@ import Image from 'next/image';
 import ReactPlayer from 'react-player'
 
 export default function completed() {
+          const css = {  maxWidth: '90%', height: 'auto'}
           return (
                     <div>
                               <div className={styles.container}>
@@ -20,11 +21,10 @@ export default function completed() {
                                                                                 <p className={style.p12}>Completed!</p>
                                                                                 <p className={style.p21}>Congratulations! Invite your bot to your discord server by <br/> clicking the button below</p>
                                                                                 <div className={style.vdocontaner}>
-                                                                                <ReactPlayer url='https://www.youtube.com/watch?v=R7x2PDFOvi8' height={300} width={670} />
+                                                                                <ReactPlayer  url='https://www.youtube.com/watch?v=jfKfPfyJRdk' style={css} width="400" height={300}  />
                                                                                 </div>
-                                                                                
-                                                                                
                                                                       </div>
+                                                                      
                                                                       
                                                                       <Link href="/"><button className={style.buttoninvitebot} type="submit" value="Submit" >Invite your bot</button></Link>
                                                             </div>
